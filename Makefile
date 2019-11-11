@@ -17,7 +17,7 @@ maind: libmyMath.so mymathd
 
 mymaths: $(OBJECTS_MAIN) libmyMath.a
 	$(CC) $(FLAGS) -o mymaths $(OBJECTS_MAIN) libmyMath.a
-mymathd: $(OBJECTS_MAIN)
+mymathd: $(OBJECTS_MAIN) libmyMath.so
 	$(CC) $(FLAGS) -o mymathd $(OBJECTS_MAIN) ./libmyMath.so #not working
 libmyMath.so: $(OBJECTS_LIB)
 	$(CC) -shared -o libmyMath.so $(OBJECTS_LIB)
