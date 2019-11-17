@@ -12,7 +12,7 @@ double Pow (double x,int y){
 double Exp (int x){
   double e = 1;
   for (int i = 10; i > 0; --i ) {
-    e = 1 + x * e / i;
+    e = 1 + e / i;
   }
   return Pow(e,x);
 }
