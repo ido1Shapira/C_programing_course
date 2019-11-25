@@ -1,0 +1,12 @@
+int openAccount(float);
+int isValid(int);
+int isValid(int);
+int checkAmount(int);
+float decimalPoints (float);
+double getBalance(int);
+double deposit(int,float);
+double withrawal(int,float);
+void closeAccount(int);
+void interest(float);
+void printAll();
+void exiting();
