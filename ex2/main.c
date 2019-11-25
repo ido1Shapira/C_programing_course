@@ -11,7 +11,6 @@ int main (){
     printf("Enter C for Closing Account.\nEnter I for Adding Interest.\nEnter P for Printing all open accounts.\nEnter E for Exit.\n");
     printf("\nTransaction‬‬ ‫‪type?:‬‬");
     scanf(" %c",&input);
-    while(getchar()!='\n');//cleans buffer
     float amount = 0;
     int num_account = 0;
       switch (input) {
