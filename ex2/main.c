@@ -17,7 +17,6 @@ int main (){
         case 'O':
           printf("‫‪Initial deposit‬‬?:‬‬");
           scanf("%f", &amount);
-        while(getchar()!='\n');//cleans buffer
           num_account=openAccount(amount);
           if(num_account!=-1){
           printf("The new account's number is: %d\n",num_account);
@@ -26,7 +25,6 @@ int main (){
         case 'B':
           printf("Account number?:");
           scanf("%d", &num_account);
-          while(getchar()!='\n');//cleans buffer
           if(getBalance(num_account)!=-1){
             printf("The balance of %d is: %.2f\n",num_account,getBalance(num_account));
           }
@@ -34,10 +32,8 @@ int main (){
         case 'D':
           printf("Account number?:");
           scanf("%d", &num_account);
-          while(getchar()!='\n');//cleans buffer
-          printf("Amount?:");
+            printf("Amount?:");
           scanf("%f", &amount);
-          while(getchar()!='\n');//cleans buffer
           if(deposit(num_account,amount)!=-1){
             printf("The new balance of %d is: %.2f\n",num_account,getBalance(num_account));
           }
@@ -45,10 +41,8 @@ int main (){
         case 'W':
           printf("Account number?:");
           scanf("%d", &num_account);
-          while(getchar()!='\n');//cleans buffer
           printf("Amount?:");
           scanf("%f", &amount);
-          while(getchar()!='\n');//cleans buffer
           if(withrawal(num_account,amount)!=-1){
             printf("The new balance of %d is: %.2f\n",num_account,getBalance(num_account));
           }
@@ -56,14 +50,12 @@ int main (){
         case 'C':
           printf("Account number?:");
           scanf("%d", &num_account);
-          while(getchar()!='\n');//cleans buffer
           closeAccount(num_account);
           break;
         case 'I':
           printf("Interest rate?:");
           float interest_rate = 1;
           scanf("%f", &interest_rate);
-          while(getchar()!='\n');//cleans buffer
           interest(interest_rate);
           break;
         case 'P':
