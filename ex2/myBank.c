@@ -2,7 +2,7 @@
 #include "myBank.h"
 #define numOfAccounts 50
 #define range 901
-static float accounts [2][numOfAccounts] ={0};
+float accounts [2][numOfAccounts] ={0};
 int isValid(int account_number){
   int index = account_number-range;
   if (index < 0 || index > numOfAccounts-1){

@@ -1,3 +1,4 @@
+extern float accounts [2][50];
 int openAccount(float);
 int isValid(int);
 int isValid(int);
