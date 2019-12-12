@@ -16,7 +16,7 @@ int main(){
         printf("%d ",*(arr+i));
     }
     insertion_sort(arr,SIZE);
-    printf("The sorted array:\n");
+    printf("\nThe sorted array:\n");
     for (size_t i = 0; i < SIZE; i++)
     {
         printf("%d ",*(arr+i));

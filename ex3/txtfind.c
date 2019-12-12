@@ -5,7 +5,7 @@
 int getLine(char s[]){
     char c;
     int i,j;
- for(i=0,j=0; (c=getchar()!=EOF&& c!='\n');i++)
+ for(i=0,j=0; (c=getchar())!=EOF&& c!='\n';i++)
     {
         if(i<LINE-1)
         {
