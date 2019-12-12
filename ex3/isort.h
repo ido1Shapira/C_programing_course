@@ -1,2 +1,2 @@
-void shift_element(int *arr ,int i);
-void insertion_sort(int *arr , int len);
+void shift_element(int *,int );
+void insertion_sort(int * , int);

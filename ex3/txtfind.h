@@ -1,6 +1,9 @@
-int getline(char []s);
-int getword (char []w);
-int substring(char *str1 ,char *str2);
-int similar(char *s, char *t, int n);
-void print_lines(char *s);
-void print_similar_words(char *str)
+#define LINE 256
+#define WORD 30
+
+int getLine(char []);
+int getword (char []);
+int substring(char * ,char *);
+int similar(char *, char *, int);
+void print_lines(char *);
+void print_similar_words(char *);
