@@ -4,23 +4,16 @@
 #define SIZE 50
 int main(){
     int arr[SIZE];
-     for (size_t i = 0; i < SIZE; i++)
-    {
-      //  printf("Insert the %ld number: ",i+1);
-        
-        scanf("%d\n",(arr+i));
-    }
-    printf("The original array:\n");
-       for (size_t i = 0; i < SIZE; i++)
-    {
-        printf("%d ",*(arr+i));
-    }
-    insertion_sort(arr,SIZE);
-    printf("\nThe sorted array:\n");
     for (size_t i = 0; i < SIZE; i++)
     {
-        printf("%d ",*(arr+i));
+        scanf("%d\n",(arr+i));
     }
-    printf("\n");
+    size_t i;
+    insertion_sort(arr,SIZE);
+    for (i = 0; i < SIZE-1; i++)
+    {
+        printf("%d,",*(arr+i));
+    }
+    printf("%d\n",*(arr+i));
     return 0;
 }

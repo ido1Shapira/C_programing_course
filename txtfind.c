@@ -89,7 +89,7 @@ void print_lines(char *s)
     while(getLine(line))
     {
         if(substring(line,s)){
-            puts(line);
+           printf("%s",line);
         }
     }
 }

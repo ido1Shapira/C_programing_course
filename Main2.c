@@ -14,12 +14,10 @@ int main(){
         return 0;
     }
     if(option == 'a'){
-        printf("Printing lines that contains the word '%s':\n\n",word);
-        print_lines(word);
+         print_lines(word);
     }
     else{
-    printf("Printing the similar words for '%s' up to 1 degree of similarity:\n",word);
-    print_similar_words(word);
+        print_similar_words(word);
     }
 
     return 0;
